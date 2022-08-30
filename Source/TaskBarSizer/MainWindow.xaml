@@ -1,0 +1,15 @@
+﻿<Window x:Class="TaskBarSizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Windows 11 Task Bar Sizer" MinHeight="180" MinWidth="350" Height="180" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Choose a size" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10,0,10,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <RadioButton Name="radio0" Content="Small" Margin="10,31,10,0" VerticalAlignment="Top"/>
+        <RadioButton Name="radio1" Content="Normal" Margin="10,51,10,0" VerticalAlignment="Top"/>
+        <RadioButton Name="radio2" Content="Big" Margin="10,71,10,0" VerticalAlignment="Top"/>
+        <Button Content="Set" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="65" Click="ButtonSet_Click"/>
+    </Grid>
+</Window>
